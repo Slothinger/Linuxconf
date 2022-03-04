@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+echo "###############################"
+echo "#      Backup Config          #"
+echo "###############################"
+
+cp -r $HOME/.config/xfce4 $HOME/BACKUP/xfce/.config/xfce4
+
+echo "###############################"
+echo "#      Themes                 #"
+echo "###############################"
+
+git clone https://github.com/ZorinOS/zorin-desktop-themes.git /tmp/Themess
+git clone https://github.com/B00merang-Project/Windows-10-Dark.git /tmp/Themess
+
+#cp -r /tmp/Themess/* ~/.local/share/themes/
+cp -r /tmp/Themess/* /usr/share/icons/
+
+echo "###############################"
+echo "#      Icons                  #"
+echo "###############################"
+
+git clone https://github.com/ZorinOS/zorin-icon-themes.git /tmp/Iconss
+
+cp -r /tmp/Iconss/* /usr/share/icons/
+
+echo "###############################"
+echo "#      Xfce Config            #"
+echo "###############################"
+
+git clone https://github.com/Slothinger/Linuxconf.git /tmp/Configss
+
+#cp -r /tmp/Configss/* $HOME/.config/xfce4

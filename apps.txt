@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+echo "###############################"
+echo "#      Add Repos              #"
+echo "###############################"
+
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" > /etc/apt/sources.list.d/teams.list'
+
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor | sudo dd of=/usr/share/keyrings/vivaldi-browser.gpg
+echo "deb [signed-by=/usr/share/keyrings/vivaldi-browser.gpg arch=$(dpkg --print-architecture)] https://repo.vivaldi.com/archive/deb/ stable main" | sudo dd of=/etc/apt/sources.list.d/vivaldi-archive.list
+
+sudo add-apt-repository ppa:xubuntu-dev/extras
+
+
+echo "###############################"
+echo "#      Install Apps           #"
+echo "###############################"
+
+apt-get update
+
+echo -e "\nInstalling Base System\n"
+
+PKGS=(
+
+
+'xfce4-docklike-plugin'
+'screen'
+'vim'
+'curl'
+'teams'
+'vivaldi-stable'
+'keepassxc'
+#Screenshoter
+'flameshot'
+'gimp'
+#Imageviewer
+'nomacs'
+#Terminal
+'terminator'
+#Media Player
+'celluloid'
+#shinglify-bin
+
+
+)
+
+for PKG in "${PKGS[@]}"; do
+    echo "INSTALLING: ${PKG}"
+    sudo apt-get install "$PKG" --yes
+done
+
+
+fi
+

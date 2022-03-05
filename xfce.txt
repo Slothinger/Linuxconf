@@ -10,24 +10,24 @@ echo "###############################"
 echo "#      Themes                 #"
 echo "###############################"
 
-git clone https://github.com/ZorinOS/zorin-desktop-themes.git /tmp/Themess
-git clone https://github.com/B00merang-Project/Windows-10-Dark.git /tmp/Themess
+git clone https://github.com/ZorinOS/zorin-desktop-themes.git /tmp/zorindesktoptheme
+git clone https://github.com/B00merang-Project/Windows-10-Dark.git /tmp/win10theme
 
-#cp -r /tmp/Themess/* ~/.local/share/themes/
-cp -r /tmp/Themess/* /usr/share/icons/
+cp -r /tmp/zorindesktoptheme/* /usr/share/themes/
+cp -r /tmp/win10theme /usr/share/themes/
 
 echo "###############################"
 echo "#      Icons                  #"
 echo "###############################"
 
-git clone https://github.com/ZorinOS/zorin-icon-themes.git /tmp/Iconss
+git clone https://github.com/ZorinOS/zorin-icon-themes.git /tmp/zorinicons
 
-cp -r /tmp/Iconss/* /usr/share/icons/
+cp -r /tmp/zorinicons/* /usr/share/icons/
 
 echo "###############################"
 echo "#      Xfce Config            #"
 echo "###############################"
 
-git clone https://github.com/Slothinger/Linuxconf.git /tmp/Configss
+#git clone https://github.com/Slothinger/Linuxconf.git /tmp/Configss
 
 #cp -r /tmp/Configss/* $HOME/.config/xfce4

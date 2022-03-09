@@ -41,7 +41,8 @@ PKGS=(
 #Media Player
 'celluloid'
 #shinglify-bin
-
+#Open Sans Font
+fonts-open-sans
 
 )
 

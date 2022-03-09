@@ -43,6 +43,8 @@ PKGS=(
 #shinglify-bin
 #Open Sans Font
 fonts-open-sans
+#System
+lightdm-gtk-greeter-settings
 
 )
 

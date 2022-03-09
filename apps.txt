@@ -43,6 +43,7 @@ PKGS=(
 #Screenshoter
 'flameshot'
 'gimp'
+'steam'
 #Imageviewer
 'nomacs'
 #Terminal

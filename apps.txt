@@ -18,7 +18,11 @@ rm -f packages.microsoft.gpg
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor | sudo dd of=/usr/share/keyrings/vivaldi-browser.gpg
 echo "deb [signed-by=/usr/share/keyrings/vivaldi-browser.gpg arch=$(dpkg --print-architecture)] https://repo.vivaldi.com/archive/deb/ stable main" | sudo dd of=/etc/apt/sources.list.d/vivaldi-archive.list
 
-
+#Teamviewer
+wget https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc
+sudo apt-key add TeamViewer2017.asc
+sudo sh -c 'echo "deb http://linux.teamviewer.com/deb stable main" >> /etc/apt/sources.list.d/teamviewer.list'
+rm TeamViewer2017.asc 
 
 sudo add-apt-repository ppa:xubuntu-dev/extras
 
@@ -38,6 +42,7 @@ PKGS=(
 'code'
 'curl'
 'teams'
+'teamviewer'
 'vivaldi-stable'
 'keepassxc'
 #Screenshoter
@@ -66,4 +71,3 @@ done
 
 
 fi
-

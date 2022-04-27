@@ -46,6 +46,7 @@ PKGS=(
 'screen'
 'vim'
 'code'
+'git'
 'curl'
 'qdirstat'
 'teams'

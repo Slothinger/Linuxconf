@@ -13,8 +13,8 @@ echo "###############################"
 git clone https://github.com/ZorinOS/zorin-desktop-themes.git /tmp/zorindesktoptheme
 git clone https://github.com/B00merang-Project/Windows-10-Dark.git /tmp/win10theme
 
-cp -r /tmp/zorindesktoptheme/* /usr/share/themes/
-cp -r /tmp/win10theme /usr/share/themes/
+sudo cp -r /tmp/zorindesktoptheme/* /usr/share/themes/
+sudo cp -r /tmp/win10theme /usr/share/themes/
 
 echo "###############################"
 echo "#      Icons                  #"
@@ -22,7 +22,7 @@ echo "###############################"
 
 git clone https://github.com/ZorinOS/zorin-icon-themes.git /tmp/zorinicons
 
-cp -r /tmp/zorinicons/* /usr/share/icons/
+sudo cp -r /tmp/zorinicons/* /usr/share/icons/
 
 echo "###############################"
 echo "#      Xfce Config            #"

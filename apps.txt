@@ -70,7 +70,11 @@ PKGS=(
 #System
 'lightdm-gtk-greeter-settings'
 'xfce4-docklike-plugin'
-
+'xfce4-panel-profiles'
+#SMB
+'gvfs-backends'
+'libsmbclient'
+'smbclient'
 )
 
 for PKG in "${PKGS[@]}"; do

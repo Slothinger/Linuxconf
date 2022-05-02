@@ -75,6 +75,9 @@ PKGS=(
 'gvfs-backends'
 'libsmbclient'
 'smbclient'
+#Fonts
+'fonts-ibm-plex'
+
 )
 
 for PKG in "${PKGS[@]}"; do

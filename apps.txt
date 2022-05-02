@@ -42,7 +42,6 @@ apt-get update
 echo -e "\nInstalling Base System\n"
 
 PKGS=(
-
 'screen'
 'vim'
 'code'
@@ -65,8 +64,9 @@ PKGS=(
 #Media Player
 'celluloid'
 #'shinglify-bin'
-#Open Sans Font
+#Fonts
 'fonts-open-sans'
+'fonts-ibm-plex'
 #System
 'lightdm-gtk-greeter-settings'
 'xfce4-docklike-plugin'
@@ -75,9 +75,6 @@ PKGS=(
 'gvfs-backends'
 'libsmbclient'
 'smbclient'
-#Fonts
-'fonts-ibm-plex'
-
 )
 
 for PKG in "${PKGS[@]}"; do

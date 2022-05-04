@@ -71,6 +71,7 @@ PKGS=(
 'lightdm-gtk-greeter-settings'
 'xfce4-docklike-plugin'
 'xfce4-panel-profiles'
+'xscreensaver-data-extra'
 #SMB
 'gvfs-backends'
 'libsmbclient'
